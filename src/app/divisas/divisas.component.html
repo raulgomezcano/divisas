@@ -1,0 +1,11 @@
+<p>Introduce la cantidad</p>
+<input type="number" [(ngModel)]="numero1">
+<br>
+<p>Cambiar a:</p>
+<select [(ngModel)]="divisa">
+    <option value="dolar">Dolar</option>
+    <option value="corona">Corona Danesa</option>
+    <option value="libra">Libra</option>
+</select>
+<button (click)="convertir()">Calcular</button>
+<p>El resultado es: {{resultado}}</p>
